@@ -1,4 +1,4 @@
-#// daily 10 backend
+# // daily 10 backend
 
 from flask import Flask, render_template
 from scrap_data import ScrapData
@@ -24,5 +24,3 @@ def about_page():
     return render_template('about_us.html')
 
 
-if __name__ == '__main__':
-    app.run(debug=False, host=0.0.0.0)
