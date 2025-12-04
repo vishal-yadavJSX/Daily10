@@ -1,7 +1,7 @@
 # // daily 10 backend
 
 from flask import Flask, render_template
-from scrap_data import ScrapData
+from daily10.scrap_data import ScrapData
 
 app = Flask(__name__)
 
@@ -22,5 +22,6 @@ def contact_page():
 @app.route('/about_us')
 def about_page():
     return render_template('about_us.html')
+
 
 
